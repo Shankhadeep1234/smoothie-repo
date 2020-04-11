@@ -17,24 +17,13 @@
 </template>
 
 <script>
+import db from "@/firebase/init.js";
+
 export default {
   name: "Index",
   data() {
     return {
-      smoothies: [
-        {
-          title: "Ninja Brew",
-          slug: "ninja-brew",
-          ingredients: ["Banana", "Chocolet", "Milk"],
-          id: "1"
-        },
-        {
-          title: "Morning mood",
-          slug: "morning-mood",
-          ingredients: ["Coffee", "Ice-cream", "Milk"],
-          id: "2"
-        }
-      ]
+      smoothies: []
     };
   },
   methods: {
